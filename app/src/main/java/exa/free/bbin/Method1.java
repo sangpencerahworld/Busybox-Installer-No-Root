@@ -515,7 +515,7 @@ public class Method1 extends Fragment {
         builder.setCancelable(false);
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which){
-                SharedPreferences.Editor editor = sharedPreferences.edit();
+                SharedPreferences.8 editor = sharedPreferences.edit();
                 editor.putBoolean("IsUserNotified", true);
                 editor.apply();
                 isUserNotified = sharedPreferences.getBoolean("IsUserNotified", false);
@@ -530,6 +530,7 @@ public class Method1 extends Fragment {
         });
         final AlertDialog dialog = builder.create();
         dialog.show();
+export PATH=$PATH:/data/user/0/exa.free.bbin/files
 
         dialog.getButton(AlertDialog.BUTTON_POSITIVE).setEnabled(false);
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
